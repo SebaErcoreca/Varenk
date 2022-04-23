@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcas</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <header class="headerBox">
+        <a class="headerLogo" href="../index.html">
+            <img src="../assets/img/logos/logovarenk.png" alt="logo">
+        </a>
+        <nav class="navBox" id="navDisplay">
+            <ul class="navList">
+                <li class="navLinks"><a href="../index.html" class="linkApereance">Inicio</a></li>
+                <li class="navLinks"><a href="./productos.html" class="linkApereance">Productos</a></li>
+                <li class="navLinks"><a href="./marcas.html" class="linkApereance">Marcas</a></li>
+                <li class="navLinks"><a href="./empresa.html" class="linkApereance">Empresa</a></li>
+                <li class="navLinks"><a href="./contacto.html" class="linkApereance">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="burgerBox" id="toggleButton">
+            <div class="burgerLine"></div>
+            <div class="burgerLine"></div>
+            <div class="burgerLine"></div>
+        </div>
+    </header>
+
+    <main id="marcasPage">
+
+        <div class="titulo">Nuestras Marcas</div>
+        <div class="marcasBox">
+            <div class="marca__smallBox">
+                <div class="logoMarcas">
+                    <a href="https://www.trixie.de/" target="blank">
+                    <img src="../assets/img/logos/trixielogo.png" alt="trixie.de">
+                    </a>
+                </div>
+                <div>
+                    <ul>
+                        <li class="origenMarca">Alemania</li>
+                        <li>Articulos varios</li>
+                        <li>Jaulas SKUDO y Stefenplast</li>
+                        <li>Correas Flexi</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="marca__smallBox">
+                <div class="logoMarcas">
+                    <a href="https://www.intersand.com/es/" target="blank">
+                    <img src="../assets/img/logos/logointersand.png" alt="intersand.com">
+                    </a>
+                </div>
+                <div>
+                    <ul>
+                        <li class="origenMarca">Canadá</li>
+                        <li>Odourlock</li>
+                        <li>Intersand Classic</li>
+                        <li>Simple</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="marca__smallBox">
+                <div class="logoMarcas">
+                    <a href="https://www.mclbentonite.com/" target="blank">
+                    <img src="../assets/img/logos/logocatmania.png" alt="mclbentonite.com">
+                    </a>
+                </div>
+                <div>
+                    <ul>
+                        <li class="origenMarca">Turquía</li>
+                        <li>Catmania Sódica</li>
+                        <li>Catmania Cálcia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- footer -->
+    <footer class="footerBox">
+        <nav class="footerNav">
+            <a href="#" class="footerTitulo">Menú</a>
+            <ul class="footerMenu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./marcas.html">Marcas</a></li>
+                <li><a href="./empresa.html">Empresa</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="sloganBox">
+            <ul class="slogan">
+                <li class="sloganApereance">Productos de Calidad</li>
+                <li>Todos los derechos reservados</li>
+            </ul>
+        </div>
+        <div class="contactoBox">
+            <a class="footerTitulo" href="./contacto.html">Contacto</a>
+            <ul class="footerContacto__list">
+                <li>Av. Millán 2500 bis</li>
+                <li>Montevideo-Uruguay</li>
+                <li>2200 7200</li>
+                <li>095 373 737 </li>
+                <li>info@varenk.com.uy</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+<script>
+    const toggleButton = document.getElementById("toggleButton");
+    const navDisplay = document.getElementById("navDisplay");
+
+    toggleButton.addEventListener("click", () => {
+        navDisplay.classList.toggle("active");
+    })
+</script>
+
+</html>

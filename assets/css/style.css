@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+body {
+    background: linear-gradient(#21BF73, #21bf7338);
+}
+
+/* header */
+/* moblie view */
+.headerBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.headerLogo {
+    cursor: pointer;
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    display: grid;
+    place-content: center;
+}
+
+.navBox {
+    grid-template-columns: 1fr;
+    display: none;
+
+}
+
+.navList {
+    list-style: none;
+
+}
+
+.navLinks {
+    width: 100%;
+    border-top: solid black;
+    text-align: center;
+
+}
+
+.linkApereance {
+    text-transform: uppercase;
+    color: white;
+    font-size: 26px;
+}
+
+.linkApereance:hover {
+    background-color: rgba(245, 245, 245, 0.171);
+    border-radius: 10px;
+}
+
+.burgerBox {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    display: grid;
+    place-content: center;
+}
+
+.burgerLine {
+    width: 40px;
+    height: 9px;
+    background-color: white;
+    margin-bottom: 7px;
+}
+
+.active {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    place-content: center;
+
+}
+
+/* carousel */
+.carouselBox {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carouselApereance {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    row-gap: 0;
+    position: relative;
+    left: 0;
+    animation: 20s carousel infinite;
+}
+
+.slide {
+    width: 100%;
+    border-bottom: solid 1rem;
+    border-top: solid 1rem;
+    border-color: #21BF73;
+}
+
+@keyframes carousel {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -200%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -300%;
+    }
+}
+
+/* novedades */
+
+.novedadesBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    justify-items: center;
+}
+
+.titulo {
+    text-transform: uppercase;
+    color: white;
+    font-size: 39px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    -webkit-text-stroke: black 1px;
+}
+
+.novedadesLink__box {
+    background: white;
+    border: black solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.novedadesSub {
+    margin: 1rem;
+    font-size: 23px;
+}
+
+.novedadesDesc {
+    font-size: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: justify;
+}
+
+.novedadesBtn__box {
+    margin: 4px;
+    align-self: flex-end;
+}
+
+.novedadesBtn {
+    line-height: 0;
+    border-radius: 20px;
+    font-size: 22px;
+    height: 2rem;
+    width: 4rem;
+    cursor: pointer;
+}
+
+/* footer */
+
+.footerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.678), transparent);
+}
+
+.footerNav {
+    display: none;
+}
+
+.footerMenu {
+    list-style: none;
+}
+
+.footerMenu li a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.footerMenu li a:hover {
+    background-color: rgba(245, 245, 245, 0.171);
+    border-radius: 8px;
+}
+
+.sloganBox {
+    margin: 20px;
+}
+
+.slogan {
+    list-style: none;
+    color: white;
+}
+
+.sloganApereance {
+    font-family: 'Comic Neue', cursive;
+    font-size: 40px;
+}
+
+.contactoBox {
+    margin: 20px;
+    padding: 10px;
+    border-top: black solid;
+    width: 90%;
+}
+
+.footerTitulo {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.footerContacto__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    color: white;
+}
+
+/* marcas */
+
+.marcasBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-items: center;
+    width: 80%;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#marcasPage {
+    text-align: -webkit-center;
+}
+
+.marca__smallBox {
+    border-bottom: black solid;
+    margin-bottom: 30px;
+    width: 82%;
+}
+
+.marca__smallBox ul {
+    list-style: none;
+}
+
+.logoMarcas {
+    height: auto;
+    width: auto;
+    transition: transform 2s ease-in-out;
+}
+
+.logoMarcas:hover {
+    animation: up-and-down 2s ease-in-out;
+}
+
+@keyframes up-and-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(0);
+
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+
+    }
+}
+
+.origenMarca {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: grey;
+    text-decoration: underline;
+}
+
+@media all and (min-width: 1100px) {
+
+    /*desktop view marcas */
+
+    .marcasBox {
+        display: flex;
+        width: 90%;
+    }
+
+    .marca__smallBox {
+        border: none;
+        margin-top: 30px;
+    }
+}
+
+@media all and (min-width: 700px) {
+
+    /*desktop view novedades */
+
+    .novedadesBox {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    .novedadesTitle {
+        grid-row: 1 /3;
+        grid-column: 1 /4;
+
+    }
+
+    .novedadesImg {
+        height: 500px
+    }
+
+    /*desktop view footer */
+
+    .footerBox {
+        display: flex;
+        flex-direction: row;
+        padding: 5%;
+        justify-content: space-around;
+    }
+
+    .footerNav {
+        display: block;
+        width: 20%;
+    }
+
+    .sloganBox {
+        margin: 0;
+    }
+
+    .contactoBox {
+        margin: 0;
+        padding: 14px;
+        border-top: none;
+        width: 20%;
+    }
+
+    .footerContacto__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+        color: white;
+    }
+
+    @media all and (min-width: 1250px) {
+
+    /* desktop view header */
+    .headerBox {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5%;
+        align-items: center;
+    }
+
+    .headerLogo {
+        cursor: pointer;
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+        display: grid;
+        place-content: center;
+    }
+
+    .burgerBox {
+        display: none;
+    }
+
+    .navBox {
+        display: flex;
+    }
+
+    .navList {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    
+
+    .navLinks {
+        padding: 0 20px;
+        border: none;
+    }
+
+    .linkApereance {
+        text-transform: uppercase;
+        color: white;
+        font-size: 28px;
+    }
+
+    .linkApereance:hover {
+        background-color: rgba(245, 245, 245, 0.171);
+        border-radius: 10px;
+    }
+    }    
+
+
+}
