@@ -11,72 +11,6 @@ body {
     background: linear-gradient(#21BF73, #21bf7338);
 }
 
-/* header */
-/* moblie view */
-.headerBox {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.headerLogo {
-    cursor: pointer;
-    grid-row: 1 / 2;
-    grid-column: 1 / 3;
-    display: grid;
-    place-content: center;
-}
-
-.navBox {
-    grid-template-columns: 1fr;
-    display: none;
-
-}
-
-.navList {
-    list-style: none;
-
-}
-
-.navLinks {
-    width: 100%;
-    border-top: solid black;
-    text-align: center;
-
-}
-
-.linkApereance {
-    text-transform: uppercase;
-    color: white;
-    font-size: 26px;
-}
-
-.linkApereance:hover {
-    background-color: rgba(245, 245, 245, 0.171);
-    border-radius: 10px;
-}
-
-.burgerBox {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    display: grid;
-    place-content: center;
-}
-
-.burgerLine {
-    width: 40px;
-    height: 9px;
-    background-color: white;
-    margin-bottom: 7px;
-}
-
-.active {
-    display: grid;
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    place-content: center;
-
-}
-
 /* carousel */
 .carouselBox {
     width: 100%;
@@ -394,57 +328,7 @@ body {
         justify-content: center;
         list-style: none;
         color: white;
-    }
-
-    @media all and (min-width: 1250px) {
-
-    /* desktop view header */
-    .headerBox {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 5%;
-        align-items: center;
-    }
-
-    .headerLogo {
-        cursor: pointer;
-        grid-row: 1 / 2;
-        grid-column: 1 / 3;
-        display: grid;
-        place-content: center;
-    }
-
-    .burgerBox {
-        display: none;
-    }
-
-    .navBox {
-        display: flex;
-    }
-
-    .navList {
-        list-style: none;
-        display: flex;
-        align-items: center;
-    }
-    
-
-    .navLinks {
-        padding: 0 20px;
-        border: none;
-    }
-
-    .linkApereance {
-        text-transform: uppercase;
-        color: white;
-        font-size: 28px;
-    }
-
-    .linkApereance:hover {
-        background-color: rgba(245, 245, 245, 0.171);
-        border-radius: 10px;
-    }
     }    
 
-
+    
 }
