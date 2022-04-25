@@ -24,121 +24,27 @@ body {
 
 
 /* carousel */
-.carouselBox {
-    width: 100%;
-    overflow: hidden;
-}
 
-.carouselApereance {
+.carousel{
+    height: 250px;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    display: flex;
-    row-gap: 0;
-    position: relative;
-    left: 0;
-    animation: 20s carousel infinite;
 }
 
-.slide {
-    width: 100%;
-    border-bottom: solid 1rem;
-    border-top: solid 1rem;
-    border-color: #21BF73;
-}
-
-@keyframes carousel {
-    0% {
-        left: 0%;
-    }
-
-    20% {
-        left: 0%;
-    }
-
-    25% {
-        left: -100%;
-    }
-
-    45% {
-        left: -100%;
-    }
-
-    50% {
-        left: -200%;
-    }
-
-    70% {
-        left: -200%;
-    }
-
-    75% {
-        left: -200%;
-    }
-
-    95% {
-        left: -300%;
-    }
-
-    100% {
-        left: -300%;
-    }
+.carousel-item{
+    object-fit: cover;
 }
 
 /* novedades */
 
-.novedadesBox {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 4fr;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    justify-items: center;
-}
-
-.titulo {
+.novedadesTitle {
     text-transform: uppercase;
     color: white;
     font-size: 39px;
     margin-bottom: 5px;
     margin-top: 5px;
     -webkit-text-stroke: black 1px;
-}
-
-.novedadesLink__box {
-    background: white;
-    border: black solid;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    overflow: hidden;
-    margin-bottom: 1rem;
-}
-
-.novedadesSub {
-    margin: 1rem;
-    font-size: 23px;
-}
-
-.novedadesDesc {
-    font-size: 15px;
-    margin-right: 10px;
-    margin-left: 10px;
-    text-align: justify;
-}
-
-.novedadesBtn__box {
-    margin: 4px;
-    align-self: flex-end;
-}
-
-.novedadesBtn {
-    line-height: 0;
-    border-radius: 20px;
-    font-size: 22px;
-    height: 2rem;
-    width: 4rem;
-    cursor: pointer;
+    text-align: center;
 }
 
 /* footer */
@@ -157,78 +63,6 @@ body {
 .nav-link:hover {
     background-color: rgba(245, 245, 245, 0.171);
 }
-
-@media (min-width: 992px) {
-    .col-lg-3 {
-        width: 33% !important;
-    }
-}
-
-
-
-
-
-
-/* .footerBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.678), transparent);
-}
-
-.footerNav {
-    display: none;
-}
-
-.footerMenu {
-    list-style: none;
-}
-
-.footerMenu li a {
-    color: white;
-    text-transform: uppercase;
-}
-
-.footerMenu li a:hover {
-    background-color: rgba(245, 245, 245, 0.171);
-    border-radius: 8px;
-}
-
-.sloganBox {
-    margin: 20px;
-}
-
-.slogan {
-    list-style: none;
-    color: white;
-}
-
-.sloganApereance {
-    font-family: 'Comic Neue', cursive;
-    font-size: 40px;
-}
-
-.contactoBox {
-    margin: 20px;
-    padding: 10px;
-    border-top: black solid;
-    width: 90%;
-}
-
-.footerTitulo {
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-.footerContacto__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-    color: white;
-} */
 
 /* marcas */
 
@@ -300,6 +134,22 @@ body {
     text-decoration: underline;
 }
 
+
+/* desktop view */
+@media (min-width: 992px) {
+
+    /* carousel */
+    .carousel{
+        height: 480px;
+    }
+
+    /* footer */
+    .col-lg-3 {
+        width: 33% !important;
+    }
+}
+
+
 @media all and (min-width: 1100px) {
 
     /*desktop view marcas */
@@ -313,60 +163,4 @@ body {
         border: none;
         margin-top: 30px;
     }
-}
-
-@media all and (min-width: 700px) {
-
-    /*desktop view novedades */
-
-    .novedadesBox {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto 1fr;
-    }
-
-    .novedadesTitle {
-        grid-row: 1 /3;
-        grid-column: 1 /4;
-
-    }
-
-    .novedadesImg {
-        height: 500px
-    }
-
-    /*desktop view footer */
-
-    /* .footerBox {
-        display: flex;
-        flex-direction: row;
-        padding: 5%;
-        justify-content: space-around;
-    }
-
-    .footerNav {
-        display: block;
-        width: 20%;
-    }
-
-    .sloganBox {
-        margin: 0;
-    }
-
-    .contactoBox {
-        margin: 0;
-        padding: 14px;
-        border-top: none;
-        width: 20%;
-    }
-
-    .footerContacto__list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        list-style: none;
-        color: white;
-    } */
-
-
 }

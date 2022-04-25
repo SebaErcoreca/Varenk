@@ -43,7 +43,7 @@
         aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars hamburger-size"></i>
       </button>
-      <div class="collape navbar-collapse" id="toggleMobileMenu">
+      <div class="navbar-collapse collape" id="toggleMobileMenu">
         <ul class="navbar-nav ms-auto text-center">
           <li><a href="./index.html" class="nav-link nav-link-size">Inicio</a></li>
           <li><a href="./pages/productos.html" class="nav-link nav-link-size">Productos</a></li>
@@ -55,74 +55,88 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container-md">
+
     <!-- carousel -->
-    <div class="carouselBox">
-      <div class="carouselApereance">
-        <img class="slide" src="./assets/img/banner/fbanner1.jpg" alt="">
-        <img class="slide" src="./assets/img/banner/fbanner2.jpg" alt="">
-        <img class="slide" src="./assets/img/banner/fbanner3.jpg" alt="">
-        <img class="slide" src="./assets/img/banner/fbanner1.jpg" alt="">
+
+    <div id="carousel-inicio" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/banner/fbanner1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/banner/fbanner2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/banner/fbanner3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-inicio" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-inicio" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <!-- novedades -->
-    <div class="novedadesBox">
-      <div class="titulo novedadesTitle">Novedades</div>
 
-      <div class="novedadesLink__box">
-        <div class="novedadesImg">
-          <img class="novedadesImg" src="./assets/img/novedades/rascador.jpg" alt="rascador">
-        </div>
-        <div class="novedadesSub">Rascadores</div>
-        <div class="novedadesDesc">Para rascar, esconderse, acurrucarse, trepar y disfrutar de una vista:
-          Nuestros postes rascadores y
-          muebles rascadores ofrecen todo esto y mucho más. Para uno o más gatos, con o sin juguetes, para
-          gatos
-          que les gusta trepar o afilarsus garras o para gatos que le encanta acurrucarse: Tenemos el poste
-          rascador adecuado para ti. Sus diferentes diseños y colores, hacen que nuestros postes rascadores
-          combinen perfectamente en tu casa.</div>
-        <div class="novedadesBtn__box">
-          <button class="novedadesBtn">
-            <a href="./pages/productos.html">>></a>
-          </button>
+    <div class="novedadesTitle">Novedades</div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="./assets/img/novedades/rascador.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rascadores</h5>
+            <p class="card-text">Para rascar, esconderse, acurrucarse, trepar y disfrutar de una vista:
+              Nuestros postes rascadores y
+              muebles rascadores ofrecen todo esto y mucho más. Para uno o más gatos, con o sin juguetes, para
+              gatos
+              que les gusta trepar o afilarsus garras o para gatos que le encanta acurrucarse: Tenemos el poste
+              rascador adecuado para ti. Sus diferentes diseños y colores, hacen que nuestros postes rascadores
+              combinen perfectamente en tu casa.</p>
+            <a href="./pages/productos.html" class="btn btn-primary"> + info </a>
+          </div>
         </div>
       </div>
-
-      <div class="novedadesLink__box">
-        <div class="novedadesImg">
-          <img class="novedadesImg" src="./assets/img/novedades/odourlock.jpg" alt="odourlock">
-        </div>
-        <div class="novedadesSub">Arenas Aglomerantes Ultrapremium</div>
-        <div class="novedadesDesc">Nuestra arena mineral OdourLock está compuesta de arcilla de alta calidad,
-          100% pura y natural,
-          diseñada para ofrecer la máxima satisfaccion sin problemas:</div>
-        <div class="novedadesBtn__box">
-          <button class="novedadesBtn">
-            <a href="./pages/productos.html">>></a>
-          </button>
+      <div class="col">
+        <div class="card">
+          <img src="./assets/img/novedades/odourlock.jpg" class="card-img-top" alt="odourlock">
+          <div class="card-body">
+            <h5 class="card-title">Arenas Aglomerantes Ultrapremium</h5>
+            <p class="card-text">Nuestra arena mineral OdourLock está compuesta de arcilla de alta calidad,
+              100% pura y natural,
+              diseñada para ofrecer la máxima satisfaccion sin problemas.</p>
+            <a href="./pages/productos.html" class="btn btn-primary"> + info </a>
+          </div>
         </div>
       </div>
-
-      <div class="novedadesLink__box">
-        <div class="novedadesImg">
-          <img class="novedadesImg" src="./assets/img/novedades/flexi.jpg" alt="paisaje dueño y mascota">
-        </div>
-        <div class="novedadesSub">Correas que brindan libertad</div>
-        <div class="novedadesDesc">Ninguna correa para perros es igual a otra: Tenemos los artículos clásicos
-          para perros en
-          diferentes materiales y versiones. De nylon o cuero, con extension o amortiguadores, correas
-          enrollables Flexi con tirones o cuerda, reflectantes o con estampados coloridos. Tenemos la correa
-          adecuada para cada paseo con tu perro. Nuestra gama de productos también incluye correas para
-          propósitos especiales como ciclismo, jogging o recorridos.</div>
-        <div class="novedadesBtn__box">
-          <button class="novedadesBtn">
-            <a href="./pages/productos.html">>></a>
-          </button>
+      <div class="col">
+        <div class="card">
+          <img src="./assets/img/novedades/flexi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Correas que brindan libertad</h5>
+            <p class="card-text">Ninguna correa para perros es igual a otra: Tenemos los artículos clásicos
+              para perros en
+              diferentes materiales y versiones. De nylon o cuero, con extension o amortiguadores, correas
+              enrollables Flexi con tirones o cuerda, reflectantes o con estampados coloridos. Tenemos la correa
+              adecuada para cada paseo con tu perro. Nuestra gama de productos también incluye correas para
+              propósitos especiales como ciclismo, jogging o recorridos.</p>
+            <a href="./pages/productos.html" class="btn btn-primary"> + info </a>
+          </div>
         </div>
       </div>
-
     </div>
+
   </main>
 
   <!-- footer -->
