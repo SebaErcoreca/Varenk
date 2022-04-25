@@ -11,6 +11,18 @@ body {
     background: linear-gradient(#21BF73, #21bf7338);
 }
 
+/* header */
+
+.nav-link-size {
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+.hamburger-size{
+    font-size: 2.5rem;
+}
+
+
 /* carousel */
 .carouselBox {
     width: 100%;
@@ -131,7 +143,33 @@ body {
 
 /* footer */
 
-.footerBox {
+.bg-white {
+    --bs-bg-opacity: 0;
+    background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.slogan-apereance {
+    font-family: 'Comic Neue', cursive;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.nav-link:hover {
+    background-color: rgba(245, 245, 245, 0.171);
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        width: 33% !important;
+    }
+}
+
+
+
+
+
+
+/* .footerBox {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,7 +228,7 @@ body {
     justify-content: space-around;
     list-style: none;
     color: white;
-}
+} */
 
 /* marcas */
 
@@ -299,7 +337,7 @@ body {
 
     /*desktop view footer */
 
-    .footerBox {
+    /* .footerBox {
         display: flex;
         flex-direction: row;
         padding: 5%;
@@ -328,7 +366,7 @@ body {
         justify-content: center;
         list-style: none;
         color: white;
-    }    
+    } */
 
-    
+
 }
