@@ -12,6 +12,7 @@ body {
 }
 
 /* header */
+<<<<<<< HEAD
 /* moblie view */
 .headerBox {
     display: grid;
@@ -136,10 +137,34 @@ body {
     100% {
         left: -300%;
     }
+=======
+
+.nav-link-size {
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+.hamburger-size{
+    font-size: 2.5rem;
+}
+
+
+/* carousel */
+
+.carousel{
+    height: 250px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.carousel-item{
+    object-fit: cover;
+>>>>>>> bootstrap
 }
 
 /* novedades */
 
+<<<<<<< HEAD
 .novedadesBox {
     display: grid;
     grid-template-columns: 1fr;
@@ -149,6 +174,8 @@ body {
     justify-items: center;
 }
 
+=======
+>>>>>>> bootstrap
 .titulo {
     text-transform: uppercase;
     color: white;
@@ -156,6 +183,7 @@ body {
     margin-bottom: 5px;
     margin-top: 5px;
     -webkit-text-stroke: black 1px;
+<<<<<<< HEAD
 }
 
 .novedadesLink__box {
@@ -193,10 +221,14 @@ body {
     height: 2rem;
     width: 4rem;
     cursor: pointer;
+=======
+    text-align: center;
+>>>>>>> bootstrap
 }
 
 /* footer */
 
+<<<<<<< HEAD
 .footerBox {
     display: flex;
     flex-direction: column;
@@ -256,10 +288,26 @@ body {
     justify-content: space-around;
     list-style: none;
     color: white;
+=======
+.bg-white {
+    --bs-bg-opacity: 0;
+    background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.slogan-apereance {
+    font-family: 'Comic Neue', cursive;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.nav-link:hover {
+    background-color: rgba(245, 245, 245, 0.171);
+>>>>>>> bootstrap
 }
 
 /* marcas */
 
+<<<<<<< HEAD
 .marcasBox {
     display: grid;
     grid-template-columns: 1fr;
@@ -285,6 +333,14 @@ body {
 
 .marca__smallBox ul {
     list-style: none;
+=======
+#marcasBox{
+    margin: 1rem;
+}
+
+.card-img-top{
+    width: 65%!important;
+>>>>>>> bootstrap
 }
 
 .logoMarcas {
@@ -321,6 +377,7 @@ body {
     }
 }
 
+<<<<<<< HEAD
 .origenMarca {
     font-size: 13px;
     font-family: sans-serif;
@@ -448,3 +505,19 @@ body {
 
 
 }
+=======
+
+/* desktop view */
+@media (min-width: 992px) {
+
+    /* carousel */
+    .carousel{
+        height: 480px;
+    }
+
+    /* footer */
+    .col-lg-3 {
+        width: 33% !important;
+    }
+}
+>>>>>>> bootstrap
