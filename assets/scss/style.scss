@@ -1,0 +1,135 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+body {
+    background: $color-background;
+}
+
+/* header */
+
+.nav-link{
+    margin-right: 1rem;
+
+    &:hover{
+        background-color: rgba(128, 128, 128, 0.123);
+        border-radius: 2rem;
+    }
+}
+
+.nav-link-size {
+    font-size: x-large;
+    text-transform: $text-uppercase;
+}
+
+.hamburger-size{
+    font-size: 2.5rem;
+}
+
+
+/* carousel */
+
+.carousel{
+    height: 250px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.carousel-item{
+    object-fit: cover;
+}
+
+/* novedades */
+
+.titulo {
+    text-transform: $text-uppercase;
+    color: white;
+    font-size: 39px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    -webkit-text-stroke: black 1px;
+    text-align: center;
+}
+
+/* footer */
+
+.bg-white {
+    --bs-bg-opacity: 0;
+    background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.slogan-apereance {
+    font-family: 'Comic Neue', cursive;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.nav-link:hover {
+    background-color: rgba(245, 245, 245, 0.171);
+}
+
+/* marcas */
+
+#marcasBox{
+    margin: 1rem;
+}
+
+.card-img-top{
+    width: 65%!important;
+}
+
+.logoMarcas {
+    height: auto;
+    width: auto;
+    transition: transform 2s ease-in-out;
+}
+
+.logoMarcas:hover {
+    animation: up-and-down 2s ease-in-out;
+}
+
+@keyframes up-and-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(0);
+
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+
+    }
+}
+
+
+/* desktop view */
+@media (min-width: 992px) {
+
+    /* carousel */
+    .carousel{
+        height: 480px;
+    }
+
+    /* footer */
+    .col-lg-3 {
+        width: 33% !important;
+    }
+}
