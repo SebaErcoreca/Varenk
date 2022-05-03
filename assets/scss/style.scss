@@ -1,4 +1,17 @@
+//variables & functions
 @import "variables";
+
+//base & layout
+@import "base";
+
+//colors
+@import "colors";
+
+//components (btn, card, navbar)
+@import "components/card";
+@import "components/button";
+
+//utilities (margin, padding, etc)
 
 * {
     margin: 0;
@@ -10,7 +23,7 @@
 }
 
 body {
-    background: $color-background;
+    background: map-get($colors, "primary");
 }
 
 /* header */
@@ -29,7 +42,7 @@ body {
     text-transform: $text-uppercase;
 }
 
-.hamburger-size{
+.hamburger-size{ 
     font-size: 2.5rem;
 }
 
