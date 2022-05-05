@@ -1,0 +1,146 @@
+// variables & functions
+@import "variables";
+
+// base & layout
+@import "base";
+
+// colors
+@import "colors";
+
+// components (button, card, navbar)
+@import "components/button";
+@import "components/card";
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&family=Titillium+Web&display=swap');
+
+
+// utilities (margin, padding, colors, etc)
+
+$base-margin: 2rem;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+// background color
+body {
+    background: map-get($map: $colors, $key: "primary");
+}
+
+// navbar
+.nav-link-size {
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+.burger-size{
+    font-size: $burger-size;
+}
+
+// carousel
+.carousel{
+    height: 250px;
+    margin-top: $base-margin;
+    margin-bottom: $base-margin;
+}
+
+.titulo {
+    text-transform: uppercase;
+    color: map-get($map: $colors, $key: "white");
+    font-size: 39px;
+    margin-bottom: $base-margin;
+    -webkit-text-stroke: map-get($map: $colors, $key: "black") 1px;
+    text-align: center;
+}
+
+.carousel-item{
+    object-fit: cover;
+}
+
+/* footer */
+
+.bg-white {
+    --bs-bg-opacity: 0;
+    background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.slogan-apereance {
+    font-family: 'Comic Neue', cursive;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.nav-link:hover {
+    border-radius: 20px;
+    background-color: map-get($map: $colors, $key: "hover-grey");
+}
+
+/* marcas */
+
+#marcasBox {
+    margin: 1rem;
+}
+
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+}
+
+.logoMarcas {
+    height: auto;
+    width: auto;
+    transition: transform 2s ease-in-out;
+}
+
+.logoMarcas:hover {
+    animation: up-and-down 2s ease-in-out;
+}
+
+@keyframes up-and-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(0);
+
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+
+    }
+}
+
+
+/* desktop view */
+@media (min-width: 992px) {
+
+    /* carousel */
+    .carousel {
+        height: 480px;
+    }
+
+    /* footer */
+    .col-lg-3 {
+        width: 33% !important;
+    }
+
+    .card-img-top {
+        height: 356px;
+    }
+
+}

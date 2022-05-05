@@ -1,0 +1,31 @@
+@mixin btn($bg-color: #1266f1) {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    background-color: $bg-color;
+}
+
+.btn {
+    @include btn;
+}
+
+@each $key,
+$val in $colors {
+    .btn-#{$key} {
+        @include btn($val);
+        &:hover{
+            background-color: map-get($map: $colors, $key: hover-grey);        }
+    }
+
+    .btn-outlined-#{$key} {
+        @include btn(white);
+        border: 20px solid $val;
+        &:hover{
+            background-color: $val;
+        }
+    }
+}
